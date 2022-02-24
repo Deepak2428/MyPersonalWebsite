@@ -1,3 +1,40 @@
+div
+{
+    overflow: hidden;
+    width: 100%;
+}
+
+div.row div
+{
+    display:inline-block;
+    width:50%;
+    margin: auto;
+}
+div.row div.one
+{
+    float:left;
+}
+div.row div.two
+{
+    text-align: left;
+}
+div.row div.two div
+{
+    width:70%;
+    text-align:center;
+}
+
+div.row div.one div{
+    margin-top: 15%;
+    padding-left: 25%;
+    text-align: center;
+}
+
+div.row div.two img.gif
+{
+    padding-right:20%;
+}
+
 div.navbar
 {
     background-color: rgb(222, 247, 238);
@@ -42,7 +79,7 @@ div.topcontainer
     
     background-color: rgb(222, 247, 238);
     position: relative;
-    
+    margin:0;
     
 }
 body
@@ -77,6 +114,10 @@ h2.skills
     font-size: 2.65rem;
     color:#0e7a7e;
 }
+h4
+{
+    font-weight: lighter;
+}
 h3
 {
     font-family: 'Merriweather', serif;
@@ -87,7 +128,7 @@ h3.skills
 {
     font-size: 40px;
 }
-p{
+p,h4{
     line-height: 30px;
     word-spacing: 2px;
 }
@@ -118,19 +159,24 @@ div.middlecontainer img.gif
     width:400px;
     border-radius: 80px;
 }
-
-
-
-div.middlecontainer table
+div.row div
 {
-    margin:auto;
-    padding:0x;
-    width:70%
+    display: inline-block;
+    width:40%;
+    
 }
-
-div.middlecontainer table h3
+div.row div.text
 {
-    margin-top:0px;
+    margin-top: 0;
+}
+div.row div img
+{
+    height:300px;
+    width:350px;
+}
+div.row div.temp
+{
+    width:20%;
 }
 
 div.footer
@@ -182,6 +228,18 @@ hr
     background-image: linear-gradient(to bottom, #30e3be, #2bc4ad);
     text-decoration: none;
   }
+
+    div.footer
+    {
+        padding-bottom: 20px;
+    }
+    div.footer p
+    {
+        margin-bottom: 5%;
+    }
+
+
+
   div.final
   {
     background-color: #11999E;
@@ -258,30 +316,13 @@ hr
         width:80%;
     }
 
-    p
-    {
-        width:90%;
-        margin:auto;
-        margin-bottom: 4%;
-    }
-
-    table td
-    {
-        display: block;
-        padding-top: 20px;
-        margin:auto;
-        width:90%;
-    }
-    table tr
-    {
-        margin-top: 20px;;
-    }
-
-    td hr.hrhidden
+    div.row div
     {
         display:block;
+        width: 90%;
+        margin:20px;
     }
-    
+
     a.btn
     {
         margin-top: 3%;
@@ -306,9 +347,9 @@ hr
     }
 
 
-
-
-
-
+    div.footer p
+    {
+        margin-bottom: 8%;
+    }
 
   } 
